@@ -42,4 +42,4 @@ const salt = await bcrypyt.genSalt(10);
 this.password = await bcrypyt.hash(this.password, salt);
 })
 
-export const user = model<UserDocument>("User", userSchema)
+export const User = model<UserDocument>("User", userSchema)
